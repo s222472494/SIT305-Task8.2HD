@@ -1,0 +1,139 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D1B2A"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M-Tech- Home"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_gravity="start"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:paddingTop="12dp">
+
+            <ImageButton
+                android:id="@+id/buttonProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_profile"
+                android:contentDescription="Profile"
+                android:tint="#FFFFFF"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="10sp"
+                android:textColor="#FFFFFF"
+                android:paddingTop="2dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textHomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to M-Tech Car Tuner"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#0D1B2A"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textAppDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tune your car to perfection — Performance, Efficiency, and Power at your fingertips. Welcome to M-Tech 🏁"
+        android:textSize="14sp"
+        android:textColor="#3A5068"
+        android:textStyle="italic"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintTop_toBottomOf="@id/textHomeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Card Container -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tuneCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="32dp"
+        app:cardElevation="6dp"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textAppDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/buttonTuneCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Car Tuning"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:backgroundTint="#0D1B2A"
+            android:stateListAnimator="@null"
+            android:textColor="#FFFFFF"
+            android:layout_margin="8dp"
+            android:padding="16dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_Navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        app:itemIconTint="#0D1B2A"
+        app:itemTextColor="#0D1B2A"
+        app:menu="@menu/bottom_nav_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

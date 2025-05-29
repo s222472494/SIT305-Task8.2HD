@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Main Title -->
+        <TextView
+            android:id="@+id/textTitle"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Description Section -->
+        <TextView
+            android:text="Description:"
+            android:textStyle="bold"
+            android:textColor="#00796B"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textDescription"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Performance Section -->
+        <TextView
+            android:text="Performance Simulation:"
+            android:textStyle="bold"
+            android:textColor="#00796B"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textPerformance"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Steps Section -->
+        <TextView
+            android:text="Step-by-Step Guide:"
+            android:textStyle="bold"
+            android:textColor="#00796B"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textSteps"
+            android:textColor="#444444"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Action Button -->
+        <Button
+            android:id="@+id/buttonAddModification"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Add Modification to Car"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#0D1B2A"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05"
+            android:textAllCaps="false" />
+    </LinearLayout>
+</ScrollView>

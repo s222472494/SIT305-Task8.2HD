@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFF"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/textViewCarDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2010 Ford Mustang (V8)"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textViewGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Goal: More Horsepower"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textViewAdvice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upgrade your air intake system for better airflow..."
+        android:layout_marginTop="6dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/textViewTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24 May 2025 14:30"
+        android:textSize="12sp"
+        android:textColor="#888"
+        android:layout_marginTop="6dp"/>
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_gravity="end"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

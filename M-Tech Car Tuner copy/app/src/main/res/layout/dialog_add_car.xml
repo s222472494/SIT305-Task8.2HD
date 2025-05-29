@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/inputMake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Make" />
+
+    <EditText
+        android:id="@+id/inputModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Model" />
+
+    <EditText
+        android:id="@+id/inputYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/inputEngine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Engine" />
+</LinearLayout>
